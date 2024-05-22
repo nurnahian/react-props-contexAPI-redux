@@ -11,10 +11,7 @@ function App() {
   // }
   return (
     <>
-      <UserContextProvide>
-        <Login />
-        <Profile />
-      </UserContextProvide>
+      <h1>Hello</h1>
     </>
   );
 }
