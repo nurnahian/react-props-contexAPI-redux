@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
-import UserContextProvide from "./context/UserContextProvide";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
+import { Provider } from "react-redux";
+import store from "./app/store";
 
 function App() {
   // const nahian ={
@@ -11,7 +12,11 @@ function App() {
   // }
   return (
     <>
-      <h1>Hello</h1>
+      <Provider store={store}>
+        <Login />
+        <Profile />
+      </Provider>
+      ,
     </>
   );
 }
